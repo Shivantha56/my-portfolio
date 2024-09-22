@@ -1,21 +1,22 @@
 {
   "name": "my-portfolio",
-  "version": "1.0.0",
-  "description": "this is the my portofolio website",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind": "tailwindcss -i input.css -o output.css --watch",
-    "serve": "live-server --port=5500",
-    "dev": "npm run tailwind & npm run serve"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "tailwindcss": "^3.4.12"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "live-server": "^1.2.2"
+    "react": "^18",
+    "react-dom": "^18",
+    "next": "14.2.13"
+  },
+  "devDependencies": {
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.13"
   }
 }
